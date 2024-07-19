@@ -2,6 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         id="cordova-plugin-background-mode"
         version="0.7.3">
 
@@ -71,7 +72,7 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <service android:name="de.appplant.cordova.plugin.background.ForegroundService" />
+            <service android:name="de.appplant.cordova.plugin.background.ForegroundService" android:foregroundServiceType="camera" tools:node="merge"/>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
