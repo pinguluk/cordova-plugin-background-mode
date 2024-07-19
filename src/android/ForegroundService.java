@@ -129,7 +129,11 @@ public class ForegroundService extends Service {
         boolean isSilent    = settings.optBoolean("silent", false);
 
         if (!isSilent) {
-            startForeground(NOTIFICATION_ID, makeNotification());
+            if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.TIRAMISU) {
+                startForeground(NOTIFICATION_ID, makeNotification());
+            } else {
+                startForeground(NOTIFICATION_ID, makeNotification(), ServiceInfo.FOREGROUND_SERVICE_TYPE_CAMERA);
+            }
         }
 
         PowerManager pm = (PowerManager)getSystemService(POWER_SERVICE);
