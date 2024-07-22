@@ -72,13 +72,13 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <service android:name="de.appplant.cordova.plugin.background.ForegroundService" android:foregroundServiceType="camera" tools:node="merge"/>
+            <service android:name="de.appplant.cordova.plugin.background.ForegroundService" android:foregroundServiceType="mediaPlayback" tools:node="merge"/>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.WAKE_LOCK" />
             <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-            <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+            <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
         </config-file>
 
         <source-file
