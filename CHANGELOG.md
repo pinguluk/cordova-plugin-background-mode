@@ -1,5 +1,9 @@
 ## ChangeLog
 
+#### Version 0.7.4 (22.07.2024)
+- [bugfix:] Fixed [Android SDK 34 Foreground Service Type](https://developer.android.com/about/versions/14/changes/fgs-types-required#permission-for-fgs-type)
+
+
 #### Version 0.7.3 (07.08.2019)
 This is more a "just publish all changes after long time" release.
 - [___change___:] Removed code for Windows 10 Mobile
