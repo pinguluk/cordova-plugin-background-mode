@@ -133,7 +133,7 @@ public class ForegroundService extends Service {
             if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.TIRAMISU) {
                 startForeground(NOTIFICATION_ID, makeNotification());
             } else {
-                startForeground(NOTIFICATION_ID, makeNotification(), ServiceInfo.FOREGROUND_SERVICE_TYPE_CAMERA);
+                startForeground(NOTIFICATION_ID, makeNotification(), ServiceInfo.FOREGROUND_SERVICE_TYPE_MEDIA_PLAYBACK);
             }
         }
 
